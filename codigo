@@ -1,0 +1,49 @@
+trabajadores = ["Juan Pérez","María García","Carlos López","Ana Martinez","Pedro Rodríguez","Laura Hernández","Miguel Sánchez","Isabel Gómez","Francisco Díaz","Elena Fernández"]
+sueldos =[]
+def generar_sueldos_aleatorios():
+    for i in range(10):
+        sueldo = random.randint(300000,2500000)
+        sueldos.append(sueldo)
+def clasificar_sueldos():
+        sueldos_ordenados = sorted(sueldos)
+    for i, trabajador in enumerate(trabajadores):
+        print(f"{trabajador}: ${sueldos_ordenados[i]}")
+def ver_estadisticas():
+    suma_sueldos = sum(sueldos)
+    promedio_sueldos = suma_sueldos / len(sueldos)
+    sueldo_max = max(sueldos)
+    sueldo_min = min(sueldos)
+        print(f"suma de sueldos: $ {suma_sueldos}")
+        print(f"promedio de sueldos: ${promedio_sueldos:.2f}")
+        print(f"sueldo maximo: ${sueldo_max}")
+        print(f"sueldo minimo: ${sueldo_min}")
+def reporte_sueldos():
+    for trabajador,sueldo in zip(trabajadores,sueldos):
+        Sueldo_base = (300000,2500000)
+        Descuento_salud = menos(0.7)
+        Descuento_AFP = menos(0.12)
+        Sueldo_liquido = suma(Sueldo_base,Descuento_salud,Descuento_AFP)
+        print(f"{trabajador}: $ {sueldo}, $ {Descuento_salud}, $ {Descuento_AFP}, $ {Sueldo_liquido}")
+def menu():
+    while true:
+    print("Menú")
+    print("1. Asignar sueldos aleatorios")
+    print("2. Clasificar sueldos")
+    print("3. Ver estadísticas")
+    print("4. Reporte de sueldos")
+    print("5. salir del programa")
+
+opcion = input("Ingrese un número")
+    if opcion == "1"
+    print("Generar sueldos aleatorios")
+    elif opcion == "2"
+    print("Clasificar sueldos"
+    elif opcion == "3"
+    print("ver estadisticas")
+    elif opcion == "4"
+    print("reporte de sueldos")
+    elif opcion == "5"
+    print("Finalizando programa... Desarrollado por Nicolás Belman Rut 21.731.847-5")
+    break
+    else:
+    ("opcion invalida, ingrese un número por favor")
